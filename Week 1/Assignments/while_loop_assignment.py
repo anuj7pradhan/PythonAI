@@ -27,3 +27,28 @@ while rider != license:
     if rider != license:
         print("Rs.1000 fine")
 print("Drive safely")
+
+
+
+import random
+num = random.randint(1,100)
+guess_num = 0
+
+while guess_num != num:
+    guess_num = int(input("Guess a number between 1 and 100: "))
+    if guess_num < num:
+        print("Too low!")
+    elif guess_num > num:
+        print("Too high!")
+    else:
+        print("Correct!")
+
+
+dp_payment = "5000"
+while True:
+    pending_amount = input("Pay just 5000 for AI Udaan course: ")
+    if pending_amount == dp_payment:
+        print("You are enrolled in AI Udaan successfully.")
+        break
+    else:
+        print("Pay the fee to enroll the course AI Udaan")
